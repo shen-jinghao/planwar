@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run PlaneWar",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/PlaneWar.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "${workspaceFolder}/mingw64/bin/gdb.exe",
+            "preLaunchTask": "build PlaneWar with EasyX"
+        }
+    ]
+}

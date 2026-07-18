@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Win32-MinGW-EasyX",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/easyx4mingw_25.9.10/include"
+            ],
+            "defines": [
+                "_DEBUG"
+            ],
+            "compilerPath": "${workspaceFolder}/mingw64/bin/g++.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}

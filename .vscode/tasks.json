@@ -1,0 +1,80 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build PlaneWar with EasyX",
+            "type": "shell",
+            "command": "${workspaceFolder}\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-std=c++17",
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-Wno-unknown-pragmas",
+                "-static",
+                "-static-libgcc",
+                "-static-libstdc++",
+                "-I",
+                "${workspaceFolder}\\easyx4mingw_25.9.10\\include",
+                "${workspaceFolder}\\main.cpp",
+                "${workspaceFolder}\\Common.cpp",
+                "${workspaceFolder}\\Entities.cpp",
+                "${workspaceFolder}\\Game.cpp",
+                "${workspaceFolder}\\Resources.cpp",
+                "${workspaceFolder}\\RenderUtil.cpp",
+                "${workspaceFolder}\\States.cpp",
+                "${workspaceFolder}\\easyx_ucrt_compat.cpp",
+                "-L",
+                "${workspaceFolder}\\easyx4mingw_25.9.10\\lib64",
+                "-leasyx",
+                "-lgdiplus",
+                "-lgdi32",
+                "-lwinmm",
+                "-lole32",
+                "-loleaut32",
+                "-luuid",
+                "-limm32",
+                "-lmsimg32",
+                "-o",
+                "${workspaceFolder}\\PlaneWar.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "PATH": "${workspaceFolder}\\mingw64\\bin;${env:PATH}"
+                }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Build PlaneWar with bundled MinGW and EasyX."
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe 生成活动文件",
+            "command": "E:\\cpeditor\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ]
+}

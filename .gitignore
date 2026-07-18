@@ -1,0 +1,6 @@
+.vs/
+*.exe
+mingw64/
+easyx4mingw_25.9.10/
+save*.dat
+
